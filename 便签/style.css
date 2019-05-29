@@ -1,0 +1,113 @@
+body {
+    font-size: 1em;
+    background: white;
+    font-family: '微软雅黑', sans-serif;
+}
+
+.all {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    /*position: relative;*/
+}
+
+.fld-change {
+
+}
+
+#allContent {
+    /*background-color: #dbdbdb;*/
+    background: url("timg.jpg") ;
+    border-radius: 5px;
+    height: 40px;
+
+    opacity: 0.6;
+}
+
+#id-div-note {
+    padding-top: 50px;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    height: 1000px;
+    background: url("./timg.jpg");
+}
+
+#from {
+    margin: 10px;
+    padding: 10px;
+}
+
+form input#fld-text {
+    padding: 5px;
+    margin: 5px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.fld-note {
+    display: inline-block;
+    list-style: none;
+    z-index: 1;
+    opacity: 0.9;
+    /*display: block;*/
+    /*float: left;*/
+    margin: 30px;
+    padding: 15px 15px 50px 15px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #bfbfbf;
+    /*background: LightGoldenRodYellow;*/
+    color: black;
+    text-decoration: none;
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);/*阴影*/
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;/*移动*/
+    overflow: hidden;
+}
+
+.fld-note:nth-child(even) {/*子类选择器*/
+    -webkit-transform: rotate(2deg);/*旋转*/
+    -moz-transform: rotate(2deg);/*旋转*/
+    -o-transform: rotate(2deg);/*旋转*/
+    -ms-transform: rotate(2deg);/*旋转*/
+    transform: rotate(2deg);/*旋转*/
+}
+
+.fld-note:nth-child(odd) {
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+}
+
+.fld-note:nth-child(3n) {
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+
+.fld-note:hover {
+    opacity: 1;
+    -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.4);
+    -webkit-transform: rotate(0deg) scale(1.25);
+    -moz-transform: rotate(0deg) scale(1.25);
+    -o-transform: rotate(0deg) scale(1.25);
+    transform: rotate(0deg) scale(1.25);
+    z-index: 10;
+}
+
+
+.hover {
+    display: none;
+}
